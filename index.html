@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySync</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <h2>📚 StudySync</h2>
+<ul>
+
+    <li>
+        <a href="#dashboard">🏠 Dashboard</a>
+    </li>
+
+    <li>
+        <a href="#tasks">✅ Tasks</a>
+    </li>
+
+    <li>
+        <a href="#assignments">📅 Assignments</a>
+    </li>
+
+    <li>
+        <a href="#subjects">📚 Subjects</a>
+    </li>
+
+    <li>
+        <a href="#settings">⚙️ Settings</a>
+    </li>
+
+</ul>
+
+    </aside>
+    <footer class="footer">
+    <p>StudySync © 2026 | Developed by Tanmay Upadhayay</p>
+</footer>
+
+    <main>
+
+        <header>
+
+            <h1>Welcome Back 👋</h1>
+
+            <button id="themeBtn">
+                🌙 Dark Mode
+            </button>
+
+        </header>
+
+        <section id="dashboard" class="cards">
+            <div class="card">
+
+    <h3>💡 Daily Motivation</h3>
+
+    <p id="quote">
+        Stay consistent. Success follows discipline.
+    </p>
+
+</div>
+<div class="card">
+
+    <h3>🔥 Study Streak</h3>
+
+    <h2 id="streak">1 Day</h2>
+
+    <p>Keep using StudySync every day!</p>
+
+</div>
+            
+
+                <h3>Today's Progress</h3>
+
+                <div class="progress">
+
+                    <div id="progressBar"></div>
+
+                </div>
+
+                <p id="progressText">0% Completed</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Pomodoro Timer</h3>
+
+
+                <h2 id="timer">25:00</h2>
+
+<div class="timer-buttons">
+    <button onclick="startTimer()">▶ Start</button>
+    <button onclick="pauseTimer()">⏸ Pause</button>
+    <button onclick="resetTimer()">🔄 Reset</button>
+</div>
+
+<div class="card">
+
+    <h3>📊 Dashboard Stats</h3>
+
+    <p>📋 Total Tasks: <span id="totalTasks">0</span></p>
+
+    <p>✅ Completed: <span id="completedTasks">0</span></p>
+
+    <p>⏳ Pending: <span id="pendingTasks">0</span></p>
+
+</div>
+
+</section>
+
+
+
+        <section id="dashboard" class="cards">
+
+        </section>
+
+            <h2>Task Manager</h2>
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a task">
+
+            <button onclick="addTask()">
+                Add Task
+            </button>
+
+            <ul id="taskList"></ul>
+
+        </section>
+        <section id="assignments" class="assignments">
+
+    <h2>📚 Assignment Tracker</h2>
+
+    <div class="assignment-input">
+        <input
+            type="text"
+            id="assignmentInput"
+            placeholder="Enter assignment name">
+
+        <input
+            type="date"
+            id="assignmentDate">
+
+        <button onclick="addAssignment()">
+            Add Assignment
+        </button>
+    </div>
+
+    <ul id="assignmentList"></ul>
+
+</section>
+<section id="subjects" class="subjects">
+
+</section>
+
+    <h2>📚 Subjects</h2>
+
+    <div class="subject-input">
+
+        <input
+            type="text"
+            id="subjectInput"
+            placeholder="Enter subject name">
+
+        <button onclick="addSubject()">
+            Add Subject
+        </button>
+
+    </div>
+
+    <h3>Total Subjects:
+        <span id="subjectCount">0</span>
+    </h3>
+
+    <ul id="subjectList"></ul>
+
+</section>
+<section id="settings" class="settings">
+
+    <h2>⚙️ Settings</h2>
+
+    <button onclick="clearTasks()">
+        🗑 Clear All Tasks
+    </button>
+
+    <button onclick="clearAssignments()">
+        📝 Clear Assignments
+    </button>
+
+    <button onclick="clearSubjects()">
+        📚 Clear Subjects
+    </button>
+
+    <button onclick="resetApp()">
+        🔄 Reset StudySync
+    </button>
+
+</section>
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
