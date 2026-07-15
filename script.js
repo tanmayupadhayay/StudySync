@@ -97,6 +97,15 @@ function toggleTask(index){
     displayTasks();
 
 }
+function updateDashboardStats() {
+    const total = tasks.length;
+    const completed = tasks.filter(task => task.completed).length;
+    const pending = total - completed;
+
+    document.getElementById("totalTasks").textContent = total;
+    document.getElementById("completedTasks").textContent = completed;
+    document.getElementById("pendingTasks").textContent = pending;
+}
 
 // Save to Local Storage
 function saveTasks() {

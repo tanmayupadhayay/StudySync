@@ -430,11 +430,34 @@ header{
     background:#111827;
 }
 .footer{
-    margin-top:40px;
+    margin-top:50px;
+    padding:25px;
     text-align:center;
-    padding:20px;
-    color:#64748b;
-    font-size:14px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    border-top:1px solid rgba(255,255,255,0.1);
+    color:#bfc7d5;
+    border-radius:15px 15px 0 0;
+}
+
+.footer strong{
+    color:#ffffff;
+}
+
+.footer-links{
+    margin-top:10px;
+}
+
+.footer-links a{
+    color:#5ea6ff;
+    text-decoration:none;
+    margin:0 8px;
+    transition:0.3s;
+}
+
+.footer-links a:hover{
+    color:#ffffff;
+}
 }
 .dark .subjects{
     background:#1e293b;
